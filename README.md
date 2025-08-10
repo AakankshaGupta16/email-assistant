@@ -1,10 +1,10 @@
-# 📧 Smart Email Assistant – AI Gmail Reply Generator
+# Smart Email Assistant – AI Gmail Reply Generator
 
 An AI-powered tool that generates **context-aware, tone-customized** Gmail replies using **Google's Gemini API**. Built with **Spring Boot (backend)**, **React + Material UI (frontend)**, and a **Chrome Extension (Manifest v3)** for seamless Gmail integration.
 
 ---
 
-## 🚀 Features
+## Features
 - **AI-Powered Replies** – Generates professional, friendly, or casual replies based on email content.
 - **Full-Stack Integration** – Spring Boot backend + React frontend + Chrome extension.
 - **Direct Gmail Support** – Injects an **AI Reply** button inside Gmail's compose toolbar.
@@ -14,7 +14,7 @@ An AI-powered tool that generates **context-aware, tone-customized** Gmail repli
 
 ---
 
-## 🖼️ Project Screenshots
+## Project Screenshots
 
 ### 📌 Postman API Check
 ![Postman API Check](picture_emailwriter/Postman_api_checkpng.png)
@@ -56,7 +56,7 @@ An AI-powered tool that generates **context-aware, tone-customized** Gmail repli
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 Markdown
 
 # 📧 Smart Email Assistant – AI Gmail Reply Generator
@@ -65,7 +65,7 @@ An AI-powered tool that generates **context-aware, tone-customized** Gmail repli
 
 ---
 
-## 🚀 Features
+## Features
 - **AI-Powered Replies** – Generates professional, friendly, or casual replies based on email content.
 - **Full-Stack Integration** – Spring Boot backend + React frontend + Chrome extension.
 - **Direct Gmail Support** – Injects an **AI Reply** button inside Gmail's compose toolbar.
@@ -96,7 +96,7 @@ An AI-powered tool that generates **context-aware, tone-customized** Gmail repli
 ---
 
 
-## 📂 Folder Structure
+## Folder Structure
 ```
 smart-email-assistant/
 ├── backend/
@@ -137,7 +137,7 @@ smart-email-assistant/
 ```
 
 ---
-## ⚙️ Installation & Setup
+## ⚙Installation & Setup
 
 ### 1️⃣ Clone Repository
 ```bash
@@ -147,10 +147,10 @@ cd smart-email-assistant
 2️⃣ Backend Setup (Spring Boot)
 Navigate to backend/.
 Update application.properties:
-gemini.api.url=[https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent](https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent)
+gemini.api.url=YOUR_GEMINI_MODEL_URL
 gemini.api.key=YOUR_GEMINI_API_KEY
 
-Run the application:
+Run the application: Can use IntellijIDEA and run EmailApplicationSb (Need to setup evironment variables, key and url in edit configurations);
 ```bash
 mvn spring-boot:run
 ```
@@ -176,7 +176,7 @@ Click Load unpacked and select the extension/ folder.
 Open Gmail → Compose → Click the AI Reply button.
 
 
-📜 API Endpoint
+## API Endpoint
 POST /api/email/generate
 Request Body
 ```JSON
@@ -185,11 +185,11 @@ Request Body
   "tone": "professional"
 }
 ```
-Response
+## Response
 ```
 Thank you for reaching out. I appreciate your inquiry and will respond with the requested details shortly.
 ```
-How It Works?
+## How It Works?
 
 1.User inputs email content (frontend or Gmail).
 
@@ -201,7 +201,7 @@ How It Works?
 
 
 
-Future Enhancements
+## Future Enhancements
 1. Support for multiple languages.
 
 2. Integration with Microsoft Outlook.
@@ -212,6 +212,6 @@ Future Enhancements
 
 
 
-Author
+## Author
 Aakanksha Gupta
 📧 gupta.aakanksha2003@gmail.com
