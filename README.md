@@ -14,6 +14,28 @@ An AI-powered tool that generates **context-aware, tone-customized** Gmail repli
 
 ---
 
+## 🖼️ Project Screenshots
+
+### 📌 Postman API Check
+![Postman API Check](picture_emailwriter/Postman_api_checkpng.png)
+
+### 📌 Chrome Extension UI
+![Extension](picture_emailwriter/extension.png)
+
+### 📌 Frontend – Main Interface
+![Frontend](picture_emailwriter/frontend.png)
+
+### 📌 Frontend – Input Section
+![Frontend1](picture_emailwriter/frontend1.png)
+
+### 📌 Frontend – Generated Reply View
+![Frontend2](picture_emailwriter/frontend2.png)
+
+### 📌 Frontend – Tone Selection
+![Frontend3](picture_emailwriter/frontend3.png)
+
+---
+
 ## 🛠 Tech Stack
 **Backend**
 - Spring Boot
