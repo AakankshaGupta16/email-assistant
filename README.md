@@ -56,45 +56,6 @@ An AI-powered tool that generates **context-aware, tone-customized** Gmail repli
 
 ---
 
-## Folder Structure
-Markdown
-
-# 📧 Smart Email Assistant – AI Gmail Reply Generator
-
-An AI-powered tool that generates **context-aware, tone-customized** Gmail replies using **Google's Gemini API**. Built with **Spring Boot (backend)**, **React + Material UI (frontend)**, and a **Chrome Extension (Manifest v3)** for seamless Gmail integration.
-
----
-
-## Features
-- **AI-Powered Replies** – Generates professional, friendly, or casual replies based on email content.
-- **Full-Stack Integration** – Spring Boot backend + React frontend + Chrome extension.
-- **Direct Gmail Support** – Injects an **AI Reply** button inside Gmail's compose toolbar.
-- **One-Click Response** – Automatically inserts generated reply into Gmail compose box.
-- **Responsive UI** – Material UI with theme customization, error handling, and copy-to-clipboard.
-- **Dynamic DOM Detection** – MutationObserver for Gmail UI changes.
-
----
-
-## 🛠 Tech Stack
-**Backend**
-- Spring Boot
-- WebClient (API Calls)
-- Jackson (JSON Parsing)
-- Lombok
-- Google Gemini API
-
-**Frontend**
-- React
-- Material UI
-- Axios
-
-**Extension**
-- Chrome Extension (Manifest v3)
-- JavaScript DOM Manipulation
-- MutationObserver
-
----
-
 
 ## Folder Structure
 ```
