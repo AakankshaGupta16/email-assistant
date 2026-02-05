@@ -3,22 +3,42 @@
 An AI-powered tool that generates **context-aware, tone-customized** Gmail replies using **Google's Gemini API**. Built with **Spring Boot (backend)**, **React + Material UI (frontend)**, and a **Chrome Extension (Manifest v3)** for seamless Gmail integration.
 
 ---
-# Architecture Overview
+## Architecture Overview
 
-Smart Email Assistant uses a layered architecture:
+Smart Email Assistant follows a **layered full-stack architecture** designed for seamless integration between Gmail, frontend UI, backend services, and AI response generation.
 
--Chrome Extension captures Gmail compose events and injects UI controls.
--React frontend provides manual input and tone selection interface.
--Spring Boot backend handles prompt engineering, API orchestration, and response processing.
--Google Gemini API generates context-aware responses using LLM inference.
+### Components
 
-Communication Flow:
+- **Chrome Extension**
+  - Captures Gmail compose events
+  - Injects AI Reply button into Gmail UI
+  - Dynamically interacts with Gmail DOM
 
--User clicks AI Reply inside Gmail or frontend UI.
--Content is sent to Spring Boot REST API.
--Backend constructs prompt and calls Gemini API.
--Response is returned and injected into Gmail compose box
---
+- **React Frontend**
+  - Provides manual email input interface
+  - Allows tone selection (Professional, Friendly, Casual, etc.)
+  - Displays generated AI responses
+
+- **Spring Boot Backend**
+  - Handles REST API requests
+  - Performs prompt engineering
+  - Manages Gemini API communication
+  - Processes and returns generated responses
+
+- **Google Gemini API**
+  - Generates context-aware email replies
+  - Produces tone-customized responses using LLM inference
+
+---
+
+## Communication Flow
+
+1. User clicks **AI Reply** inside Gmail or submits content via frontend UI.
+2. Email content and tone selection are sent to the Spring Boot REST API.
+3. Backend constructs an optimized prompt and sends request to Gemini API.
+4. Gemini generates a contextual response.
+5. Backend returns response to UI or Chrome extension.
+6. Generated reply is automatically inserted into Gmail compose box.
 
 ## Features
 - **AI-Powered Replies** – Generates professional, friendly, or casual replies based on email content.
