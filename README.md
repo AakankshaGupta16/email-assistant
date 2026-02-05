@@ -3,6 +3,22 @@
 An AI-powered tool that generates **context-aware, tone-customized** Gmail replies using **Google's Gemini API**. Built with **Spring Boot (backend)**, **React + Material UI (frontend)**, and a **Chrome Extension (Manifest v3)** for seamless Gmail integration.
 
 ---
+# Architecture Overview
+
+Smart Email Assistant uses a layered architecture:
+
+1.Chrome Extension captures Gmail compose events and injects UI controls.
+2.React frontend provides manual input and tone selection interface.
+3.Spring Boot backend handles prompt engineering, API orchestration, and response processing.
+4.Google Gemini API generates context-aware responses using LLM inference.
+
+Communication Flow:
+
+1.User clicks AI Reply inside Gmail or frontend UI.
+2.Content is sent to Spring Boot REST API.
+3.Backend constructs prompt and calls Gemini API.
+4.Response is returned and injected into Gmail compose box
+--
 
 ## Features
 - **AI-Powered Replies** – Generates professional, friendly, or casual replies based on email content.
