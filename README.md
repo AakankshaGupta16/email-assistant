@@ -197,6 +197,30 @@ Thank you for reaching out. I appreciate your inquiry and will respond with the 
 4. The response is returned to the UI or directly inserted into Gmail.
 
 
+## Security Considerations
+
+- Gemini API keys stored using environment variables.
+- Restricted CORS configuration.
+- Chrome extension permissions limited to Gmail domain.
+
+## Engineering Challenges & Solutions
+
+- **Dynamic Gmail UI Handling**
+  - Gmail uses dynamic DOM rendering.
+  - Solved using MutationObserver to inject extension UI reliably.
+
+- **Prompt Tone Control**
+  - Designed prompt templates to enforce tone consistency.
+
+- **API Latency Handling**
+  - Implemented asynchronous WebClient calls to prevent UI blocking.
+
+## Performance Considerations
+
+- Lightweight extension design to minimize Gmail UI overhead.
+- Async backend API calls using WebClient.
+- Error fallback logic for Gemini failures.
+
 
 ## Future Enhancements
 1. Support for multiple languages.
